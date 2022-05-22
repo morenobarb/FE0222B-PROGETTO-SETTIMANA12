@@ -11,6 +11,18 @@
       "password": "$2a$10$V629ThtmLUM59/79odM1gu9PHSp0OO18oL55JegsXRNqFLn/RMl/m",
       "fullname": "Lara Stokes",
       "id": 2
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$77YOJ4rhUpigmqo7etikS.bQIwrK53DN/KSnmpCNEh0VXe50uiV0a",
+      "name": "",
+      "id": 3
+    },
+    {
+      "email": "pippo@mail.com",
+      "password": "$2a$10$aif8OeMetbxH3EcARdgtZ.DJxON.GC31H7i9bjXMaG8vguIyc54kS",
+      "name": "pippo",
+      "id": 4
     }
   ],
   "favorites": [

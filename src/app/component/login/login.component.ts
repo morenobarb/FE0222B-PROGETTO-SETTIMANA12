@@ -23,17 +23,17 @@ export class LoginComponent implements OnInit {
     });
   }
   login() {
-    this.http.get<any>('http://localhost:4201/users').subscribe(res=>{
-      const user = res.find((a:any)=>{
-      return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
+    this.http.get<any>('http://localhost:4201/users').subscribe((res) => {
+      const user = res.find((a: any) => {
+        return (
+          a.email === this.loginForm.value.email &&
+          a.password === this.loginForm.value.password
+        );
+      });
+      if (user) {
+        this.loginForm.reset();
+        this.router.navigate(['movies']);
+      }
     });
-    if(user){
-      this.loginForm.reset();
-      this.router.navigate(['movies'])
-    } else {
-      alert ('User not found!')
-    }
-    }
-    )
   }
 }
